@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Jasa Sewa Baliho & Billboard Strategis Nasional | MediAgency</title>
+    <meta name="description" content="MediAgency menyediakan jasa sewa baliho dan billboard di lokasi paling strategis. Harga kompetitif, pengurusan izin lengkap, dan jaminan visibilitas tinggi.">
+    <meta name="keywords" content="sewa baliho murah, jasa pasang billboard, iklan luar ruang, baliho jakarta, billboard kediri, reklame strategis">
+    <meta name="author" content="MediAgency">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mediagency.id/sewa-baliho.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Sewa Baliho & Billboard Strategis - MediAgency">
+    <meta property="og:description" content="Tingkatkan brand awareness bisnis Anda dengan titik billboard premium di pusat kota.">
+    <meta property="og:url" content="https://mediagency.id/sewa-baliho.html">
+    <meta property="og:image" content="img/logo.webp">
+
+    <link rel="icon" href="img/logo.webp" type="image/png">
+    <link rel="apple-touch-icon" href="img/logo.webp">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Jasa Sewa Baliho & Billboard",
+      "serviceType": "Outdoor Advertising",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "MediAgency"
+      },
+      "description": "Layanan penyewaan titik reklame strategis, billboard digital, dan baliho konvensional dengan pengurusan perizinan lengkap.",
+      "areaServed": "Indonesia"
+    }
+    </script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <style>
+        :root {
+            --brand-color: #099aa7;
+            --brand-dark: #077d88;
+            --brand-light: #e6f5f6;
+            --brand-soft: rgba(9, 154, 167, 0.1);
+            --dark-text: #1a202c;
+            --accent-yellow: #ffc107; 
+            --footer-bg: #0a1118;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--dark-text);
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        /* --- Global Helpers --- */
+        .text-brand { color: var(--brand-color) !important; }
+        .bg-brand { background-color: var(--brand-color) !important; }
+        
+        .btn-brand {
+            background-color: var(--brand-color);
+            color: white;
+            padding: 12px 28px;
+            font-weight: 700;
+            border-radius: 12px;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        .btn-brand:hover {
+            background-color: var(--brand-dark);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(9, 154, 167, 0.2);
+        }
+
+        /* --- Navbar (KUNCI) --- */
+        .navbar {
+            padding: 0.5rem 0;
+            background: white;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.03);
+        }
+        .navbar-brand img { height: 40px; width: auto; }
+
+        /* --- Hero Detail --- */
+        .hero-detail {
+            padding: 40px 0;
+            background: linear-gradient(135deg, #e0f2f1 0%, #ffffff 100%);
+        }
+        @media (min-width: 992px) { .hero-detail { padding: 80px 0; } }
+        .hero-detail img { border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+
+        /* --- Benefit Cards --- */
+        .benefit-box {
+            padding: 30px;
+            background: #fff;
+            border-radius: 24px;
+            border: 1px solid #f1f5f9;
+            transition: 0.3s;
+            height: 100%;
+        }
+        .benefit-box:hover {
+            transform: translateY(-10px);
+            border-color: var(--brand-color);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+        }
+
+        /* --- Billboard Portfolio --- */
+        .billboard-card {
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid #eee;
+            background: #fff;
+            transition: 0.3s;
+        }
+        .billboard-card:hover { box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+        .billboard-img { width: 100%; height: 300px; object-fit: cover; }
+        .location-tag { color: var(--brand-color); font-weight: 700; font-size: 0.85rem; }
+
+        /* --- Pricing --- */
+        .price-card {
+            border: 1px solid #f1f5f9;
+            border-radius: 24px;
+            padding: 40px 30px;
+            background: #fff;
+            transition: 0.3s;
+        }
+        .price-card.featured { border: 2px solid var(--brand-color); position: relative; }
+
+        /* --- CTA Proporsional --- */
+        .cta-section {
+            background: var(--brand-color);
+            border-radius: 35px;
+            padding: 70px 40px;
+            color: white;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(9, 154, 167, 0.15);
+        }
+
+        /* --- Floating Buttons --- */
+        .floating-wa {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        .btn-top {
+            position: fixed;
+            bottom: 105px;
+            right: 30px;
+            background: white;
+            color: var(--brand-color);
+            width: 45px;
+            height: 45px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            z-index: 1000;
+            border: 1px solid #f1f5f9;
+        }
+
+        /* --- FOOTER (KUNCI) --- */
+        .main-footer {
+            background: var(--footer-bg);
+            color: #e2e8f0;
+            padding: 80px 0 30px;
+        }
+        .footer-logo { font-weight: 800; font-size: 1.8rem; color: var(--brand-color); margin-bottom: 20px; display: block; text-decoration: none; }
+        .footer-heading { font-size: 1.1rem; font-weight: 700; margin-bottom: 25px; color: white; position: relative; padding-bottom: 10px; }
+        .footer-heading::after { content: ''; position: absolute; left: 0; bottom: 0; width: 30px; height: 2px; background: var(--brand-color); }
+        .footer-links { list-style: none; padding: 0; }
+        .footer-links li { margin-bottom: 12px; }
+        .footer-links a { color: #94a3b8; text-decoration: none; transition: all 0.3s ease; font-size: 0.95rem; }
+        .footer-links a:hover { color: var(--accent-yellow); padding-left: 8px; }
+        .social-links { display: flex; gap: 12px; margin-top: 20px; }
+        .social-links a { width: 40px; height: 40px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; border-radius: 10px; color: white; text-decoration: none; transition: 0.3s; }
+        .social-links a:hover { background: var(--brand-color); color: var(--accent-yellow); transform: translateY(-3px); }
+        .contact-list { list-style: none; padding: 0; }
+        .contact-list li { display: flex; align-items: start; gap: 12px; margin-bottom: 15px; font-size: 0.95rem; color: #94a3b8; }
+        .contact-list i { color: var(--brand-color); font-size: 1.1rem; }
+        .footer-bottom { margin-top: 60px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.05); }
+    </style>
+</head>
+<body>
+
+    <a href="https://wa.me/6285606260725" class="floating-wa shadow"><i class="bi bi-whatsapp"></i></a>
+    <a href="#" class="btn-top shadow"><i class="bi bi-arrow-up"></i></a>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.webp" alt="MediAgency Logo">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link fw-semibold py-2" href="about.html">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold py-2 active" href="layanan.html">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold py-2" href="paket.html">Paket</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold py-2" href="blog.html">Blog</a></li>
+                    <li class="nav-item mt-3 mt-lg-0 ms-lg-4 w-100 w-lg-auto">
+                        <a href="https://wa.me/6285606260725" class="btn btn-brand w-100">Konsultasi WA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-detail">
+        <div class="container">
+            <div class="row align-items-center g-5 flex-column-reverse flex-lg-row">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center justify-content-lg-start">
+                          <li class="breadcrumb-item"><a href="layanan.html" class="text-decoration-none text-muted">Layanan</a></li>
+                          <li class="breadcrumb-item active text-brand fw-bold" aria-current="page">Sewa Baliho</li>
+                        </ol>
+                    </nav>
+                    <h1 class="display-4 fw-bold mb-4">Dominasi <span class="text-brand">Lalu Lintas</span> Kota Anda</h1>
+                    <p class="lead text-muted mb-4">Dapatkan titik Billboard dan Baliho paling strategis dengan traffic tinggi untuk memastikan pesan brand Anda terlihat oleh ribuan mata setiap harinya.</p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#titik" class="btn btn-brand btn-lg">Cek Titik Lokasi</a>
+                        <a href="https://wa.me/6285606260725" class="btn btn-outline-dark btn-lg" style="border-radius:12px;">Konsultasi Iklan</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="https://images.unsplash.com/photo-1542744094-24638eff58bb?auto=format&fit=crop&w=800&q=80" alt="Sewa Baliho Strategis MediAgency" class="img-fluid" loading="eager">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-5 bg-white border-bottom">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Keunggulan <span class="text-brand">Reklame</span> Kami</h2>
+                <p class="text-muted">Layanan Full Service dari produksi hingga perizinan pajak.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="benefit-box text-center">
+                        <i class="bi bi-geo-alt text-brand display-5 mb-3 d-block"></i>
+                        <h5 class="fw-bold">Lokasi Premium</h5>
+                        <p class="small text-muted mb-0">Hanya menyediakan titik di jalan protokol, pusat perbelanjaan, dan persimpangan lampu merah utama.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-box text-center">
+                        <i class="bi bi-file-earmark-text text-brand display-5 mb-3 d-block"></i>
+                        <h5 class="fw-bold">Izin & Pajak Beres</h5>
+                        <p class="small text-muted mb-0">Anda terima beres. Seluruh pengurusan izin pemda dan koordinasi pajak sudah termasuk dalam layanan.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-box text-center">
+                        <i class="bi bi-brightness-high text-brand display-5 mb-3 d-block"></i>
+                        <h5 class="fw-bold">Maintenance 24/7</h5>
+                        <p class="small text-muted mb-0">Jaminan lampu menyala dan kondisi visual baliho tetap bersih. Tim teknis siap siaga jika ada kerusakan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="titik" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Titik <span class="text-brand">Billboard</span> Tersedia</h2>
+                <p class="text-muted">Beberapa contoh titik strategis yang siap mendongkrak brand Anda.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="billboard-card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80" alt="Billboard Jakarta" class="billboard-img" loading="lazy">
+                        <div class="p-3 bg-white">
+                            <span class="location-tag">JAKARTA SELATAN</span>
+                            <h6 class="fw-bold mt-1 mb-0">Persimpangan Gatot Subroto - Sudirman</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="billboard-card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1582139329536-e7284fece509?auto=format&fit=crop&w=800&q=80" alt="Billboard Surabaya" class="billboard-img" loading="lazy">
+                        <div class="p-3 bg-white">
+                            <span class="location-tag">SURABAYA</span>
+                            <h6 class="fw-bold mt-1 mb-0">Pusat Bisnis Jalan Tunjungan</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="billboard-card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=800&q=80" alt="Billboard Kediri" class="billboard-img" loading="lazy">
+                        <div class="p-3 bg-white">
+                            <span class="location-tag">KEDIRI</span>
+                            <h6 class="fw-bold mt-1 mb-0">Bundaran Sekartaji Pusat Kota</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="billboard-card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="Billboard Malang" class="billboard-img" loading="lazy">
+                        <div class="p-3 bg-white">
+                            <span class="location-tag">MALANG</span>
+                            <h6 class="fw-bold mt-1 mb-0">Jl. Soekarno Hatta - Traffic Light</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="harga" class="py-5 bg-white">
+        <div class="container py-lg-4 text-center">
+            <h2 class="fw-bold mb-5">Investasi <span class="text-brand">Visual Bisnis</span></h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-5 col-md-6 text-start">
+                    <div class="price-card">
+                        <h5 class="fw-bold mb-2">Billboard Bulanan</h5>
+                        <p class="small text-muted mb-4">Cocok untuk kampanye jangka pendek atau event.</p>
+                        <h2 class="fw-bold text-brand mb-4">Start From <br> Rp 15jt <span class="fs-6 text-muted fw-normal">/ Bln</span></h2>
+                        <ul class="list-unstyled mb-5 small">
+                            <li class="mb-3"><i class="bi bi-check2 text-brand me-2"></i> Free Cetak & Pasang 1x</li>
+                            <li class="mb-3"><i class="bi bi-check2 text-brand me-2"></i> Pengurusan Pajak Reklame</li>
+                            <li class="mb-3"><i class="bi bi-check2 text-brand me-2"></i> Lampu Sorot LED Malam Hari</li>
+                        </ul>
+                        <button class="btn btn-outline-dark w-100 py-3">Pilih Titik</button>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 text-start">
+                    <div class="price-card featured shadow-lg">
+                        <div class="badge bg-brand text-white mb-3 px-3 py-2 rounded-pill" style="font-size: 0.7rem;">PAKET HEMAT</div>
+                        <h5 class="fw-bold mb-2">Billboard Tahunan</h5>
+                        <p class="small text-muted mb-4">Branding maksimal dengan harga jauh lebih hemat.</p>
+                        <h2 class="fw-bold text-brand mb-4">Call for <br> Special Price</h2>
+                        <ul class="list-unstyled mb-5 small">
+                            <li class="mb-3"><i class="bi bi-check2 text-brand me-2"></i> Maintenance Visual Berkala</li>
+                            <li class="mb-3"><i class="bi bi-check2 text-brand me-2"></i> Ganti Desain up to 4x Setahun</li>
+                            <li class="mb-3"><i class="bi bi-check2 text-brand me-2"></i> Prioritas Perpanjangan Titik</li>
+                        </ul>
+                        <button class="btn btn-brand w-100 py-3 shadow">Konsultasi Harga</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="cta-section">
+                <h2 class="fw-bold mb-3 display-6">Ingin Titik Lokasi Lainnya?</h2>
+                <p class="mb-5 opacity-75 lead mx-auto" style="max-width: 700px;">Kami memiliki akses ke lebih dari 1000+ titik reklame di seluruh Indonesia. Hubungi kami untuk ketersediaan lokasi di kota Anda.</p>
+                <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                    <a href="https://wa.me/6285606260725" class="btn btn-warning btn-lg fw-bold px-5 py-3 shadow-lg" style="border-radius:15px; color:#000;">
+                        <i class="bi bi-whatsapp me-2"></i> Hubungi Divisi Reklame
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a href="index.html" class="footer-logo">MediAgency</a>
+                    <p class="small leading-relaxed text-slate-400">Digital PR Agency terdepan di Indonesia. Kami membantu brand membangun otoritas melalui publikasi media massa yang kredibel.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="footer-heading">Layanan</h5>
+                    <ul class="footer-links">
+                        <li><a href="press-release.html">Press Release</a></li>
+                        <li><a href="advertorial-marketing.html">Advertorial</a></li>
+                        <li><a href="pembuatan-website.html">Jasa Buat Website</a></li>
+                        <li><a href="penulisan-jurnalistik.html">Penulisan Jurnalistik</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="footer-heading">Eksplorasi</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="#">Testimoni</a></li>
+                        <li><a href="#">Bantuan</a></li>
+                        <li><a href="https://wa.me/6285606260725">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="footer-heading">Kontak Resmi</h5>
+                    <ul class="contact-list">
+                        <li><i class="bi bi-geo-alt-fill text-brand me-2"></i><span>Jl. Raya Dhoho, Kediri, Jawa Timur, Indonesia.</span></li>
+                        <li><i class="bi bi-envelope-at-fill text-brand me-2"></i><span>mediagencyofficial@gmail.com</span></li>
+                        <li><i class="bi bi-whatsapp text-brand me-2"></i><span>+62 856 0626 0725</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center text-md-between d-md-flex justify-content-between align-items-center">
+                <p class="x-small text-slate-500 mb-0">&copy; 2026 MediAgency Digital Indonesia. All rights reserved.</p>
+                <div class="mt-3 mt-md-0">
+                    <a href="privacy-policy.html" class="x-small text-slate-500 text-decoration-none me-3">Privacy Policy</a>
+                    <a href="terms.html" class="x-small text-slate-500 text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

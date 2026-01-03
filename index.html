@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>MediAgency - Solusi Press Release Modern & Media Nasional Terpercaya</title>
+    <meta name="description" content="MediAgency menyediakan jasa press release media nasional tier-1 tercepat dan permanen. Tingkatkan otoritas brand dan optimasi SEO bisnis Anda bersama kami.">
+    <meta name="keywords" content="jasa press release, media nasional, publikasi berita, PR agency indonesia, press release murah, jasa publikasi media">
+    <meta name="author" content="MediAgency">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mediagency.id/">
+
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MediAgency - Solusi Press Release Modern">
+    <meta property="og:description" content="Publikasi cepat, SEO Friendly, dan jaminan terbit di media ternama.">
+    <meta property="og:url" content="https://mediagency.id/">
+    <meta property="og:image" content="https://mediagency.id/img/logo.webp">
+
+    <link rel="icon" href="img/logo.webp" type="image/png">
+    <link rel="apple-touch-icon" href="img/logo.webp">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "MediAgency",
+      "image": "https://mediagency.id/assets/logo.png",
+      "description": "Solusi Digital PR dan Publikasi Media Nasional Terpercaya di Indonesia.",
+      "url": "https://mediagency.id",
+      "telephone": "+6281234567890",
+      "priceRange": "Rp2.9jt - Rp6.5jt",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jalan Raya Dhoho",
+        "addressLocality": "Kediri",
+        "addressCountry": "ID"
+      }
+    }
+    </script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <style>
+        :root {
+            --brand-color: #099aa7;
+            --brand-dark: #077d88;
+            --brand-light: #e6f5f6;
+            --brand-soft: rgba(9, 154, 167, 0.1);
+            --dark-text: #1a202c;
+            --accent-yellow: #ffc107; 
+            --footer-bg: #0a1118;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--dark-text);
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        /* --- Global Helpers --- */
+        .text-brand { color: var(--brand-color) !important; }
+        .bg-brand { background-color: var(--brand-color) !important; }
+        
+        .btn-brand {
+            background-color: var(--brand-color);
+            color: white;
+            padding: 12px 28px;
+            font-weight: 700;
+            border-radius: 12px;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        .btn-brand:hover {
+            background-color: var(--brand-dark);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(9, 154, 167, 0.2);
+        }
+
+        /* --- Navbar Responsif (REVISI JARAK: RAMPING) --- */
+        .navbar {
+            padding: 0.5rem 0; /* Diubah jadi 0.5 supaya lebih naik */
+            background: white;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.03);
+        }
+        /* Penyesuaian Logo Gambar agar proporsional */
+        .navbar-brand img { height: 40px; width: auto; }
+
+        /* --- Hero Section (REVISI JARAK: NAIK KE ATAS) --- */
+        .hero-section {
+            padding: 20px 0 40px 0; /* Padding atas dikurangi jadi 20px */
+            background: radial-gradient(circle at top right, var(--brand-light), transparent 50%);
+        }
+        @media (min-width: 992px) {
+            .hero-section { padding: 40px 0 100px 0; }
+        }
+        .hero-tag {
+            display: inline-block;
+            background: var(--brand-soft);
+            color: var(--brand-color);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.75rem;
+            margin-bottom: 15px;
+        }
+
+        /* --- STYLE TAMBAHAN: MARQUEE MEDIA PARTNER --- */
+        .marquee-section {
+            background: #fff;
+            padding: 25px 0;
+            border-top: 1px solid #f1f5f9;
+            border-bottom: 1px solid #f1f5f9;
+            overflow: hidden;
+            white-space: nowrap; /* Fix agar tetap sebaris */
+        }
+        .marquee-wrapper {
+            display: inline-block;
+            animation: scrollMarquee 30s linear infinite;
+        }
+        .marquee-item {
+            display: inline-block;
+            padding: 0 40px;
+        }
+        .marquee-item img {
+            height: 35px;
+            filter: grayscale(100%);
+            opacity: 0.6;
+            transition: 0.3s ease;
+        }
+        .marquee-item img:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        @keyframes scrollMarquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* --- About Section --- */
+        .about-image-wrapper {
+            position: relative;
+            z-index: 1;
+            padding: 15px;
+        }
+        .about-image-wrapper::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 90%;
+            height: 90%;
+            border: 2px solid var(--brand-color);
+            border-radius: 25px;
+            z-index: -1;
+        }
+        .about-img {
+            border-radius: 25px;
+            width: 100%;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .floating-badge {
+            position: absolute;
+            bottom: -10px;
+            right: 10px;
+            background: white;
+            padding: 12px 18px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            max-width: 220px;
+            border-left: 4px solid var(--brand-color);
+        }
+
+        /* --- Bullet Points About --- */
+        .about-bullets {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .about-bullets li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            color: #4a5568;
+        }
+        .about-bullets i {
+            color: var(--brand-color);
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+
+        /* --- SERVICES TABS SECTION --- */
+        .nav-services .nav-link {
+            border: none;
+            color: #64748b;
+            font-weight: 600;
+            padding: 14px 20px;
+            border-radius: 12px;
+            transition: 0.3s;
+            margin-bottom: 12px;
+            background: #f8fafc;
+        }
+        .nav-services .nav-link.active {
+            background-color: var(--brand-color) !important;
+            color: white !important;
+            box-shadow: 0 8px 20px rgba(9, 154, 167, 0.25);
+        }
+        .tab-content-box {
+            background: white;
+            padding: 30px;
+            border-radius: 24px;
+            box-shadow: 0 15px 45px rgba(0,0,0,0.06);
+            border: 1px solid #f1f5f9;
+        }
+        .tab-img-landscape {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        /* --- Pricing Table --- */
+        .pricing-card {
+            border: 2px solid #f1f5f9;
+            border-radius: 24px;
+            padding: 35px;
+            position: relative;
+        }
+        .pricing-card.featured {
+            border-color: var(--brand-color);
+            box-shadow: 0 20px 40px rgba(9, 154, 167, 0.1);
+        }
+
+        /* --- Testi & CTA --- */
+        .card-testi {
+            border: 1px solid #f1f5f9;
+            border-radius: 20px;
+            padding: 25px;
+            background: white;
+            height: 100%;
+            transition: 0.3s;
+        }
+        .card-testi:hover { box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        
+        .cta-section {
+            background: var(--brand-color);
+            border-radius: 30px;
+            padding: 60px 40px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* --- Floating Buttons --- */
+        .floating-wa {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            z-index: 1000;
+            transition: 0.3s;
+        }
+        .floating-wa:hover { transform: scale(1.1); color: white; }
+
+        .btn-top {
+            position: fixed;
+            bottom: 105px;
+            right: 30px;
+            background: white;
+            color: var(--brand-color);
+            width: 45px;
+            height: 45px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            z-index: 1000;
+            transition: 0.3s;
+            border: 1px solid #f1f5f9;
+        }
+        .btn-top:hover { background: var(--brand-color); color: white; }
+
+        /* --- FOOTER MODERN --- */
+        .main-footer {
+            background: var(--footer-bg);
+            color: #e2e8f0;
+            padding: 80px 0 30px;
+        }
+        .footer-logo {
+            font-weight: 800;
+            font-size: 1.8rem;
+            color: var(--brand-color);
+            margin-bottom: 20px;
+            display: block;
+            text-decoration: none;
+        }
+        .footer-heading {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            color: white;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .footer-heading::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 30px;
+            height: 2px;
+            background: var(--brand-color);
+        }
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        .footer-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .footer-links a:hover {
+            color: var(--accent-yellow);
+            padding-left: 8px;
+        }
+        .social-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+        }
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+            margin-right: 10px;
+        }
+        .social-links a:hover {
+            background: var(--brand-color);
+            color: var(--accent-yellow);
+            transform: translateY(-3px);
+        }
+        .contact-list {
+            list-style: none;
+            padding: 0;
+        }
+        .contact-list li {
+            display: flex;
+            align-items: start;
+            gap: 12px;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+            color: #94a3b8;
+        }
+        .contact-list i {
+            color: var(--brand-color);
+            font-size: 1.1rem;
+        }
+        .footer-bottom {
+            margin-top: 60px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://wa.me/6285606260725" class="floating-wa shadow"><i class="bi bi-whatsapp"></i></a>
+    <a href="#" class="btn-top shadow"><i class="bi bi-arrow-up"></i></a>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.webp" alt="MediAgency Logo">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link fw-semibold py-2" href="about.html">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold py-2" href="layanan.html">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold py-2" href="paket.html">Paket</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold py-2" href="blog.html">Blog</a></li>
+                    <li class="nav-item mt-3 mt-lg-0 ms-lg-4 w-100 w-lg-auto">
+                        <a href="https://wa.me/6285606260725" class="btn btn-brand w-100">Konsultasi WA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="container text-center text-lg-start">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="hero-tag">DIGITAL PR SOLUTIONS</span>
+                    <h1 class="display-5 fw-bold mb-4">Branding Bisnis Anda ke <span class="text-brand">Media Nasional</span></h1>
+                    <p class="text-muted mb-4 px-md-5 px-lg-0">Publikasi cepat, SEO Friendly, dan jaminan terbit di media ternama untuk meningkatkan kepercayaan konsumen Anda.</p>
+                    <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
+                        <a href="#paket" class="btn btn-brand btn-lg">Cek Paket Media</a>
+                        <a href="#about" class="btn btn-outline-secondary btn-lg" style="border-radius:12px;">Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://illustrations.popsy.co/teal/presentation.svg" alt="PR Agency Illustration" class="img-fluid" style="max-height: 350px;" loading="eager">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="marquee-section">
+        <div class="marquee-wrapper">
+            <div class="marquee-item"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEhjOGq50LOvRQ2RYAAo_fz6SLrpuhtqpgsEv6UprQwa-J4U7tzZ0UZEBEEb1wlPtanz9Rl69nTiK5uwltsx-28JAW_oMLOmaOqLNpxE9fFyKy_41M0fKLjTV4hhTkfMVRsq0zGhFYR1eR3kOajr3gp4LceDXP7NZm1qBCqxw58YXR3VkxX5MBJSJeAeXtgv" alt="Jawa Pos Radar Kediri"></div>
+            <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Kompas_Logo.svg" alt="Kompas"></div>
+            <div class="marquee-item"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEhjOGq50LOvRQ2RYAAo_fz6SLrpuhtqpgsEv6UprQwa-J4U7tzZ0UZEBEEb1wlPtanz9Rl69nTiK5uwltsx-28JAW_oMLOmaOqLNpxE9fFyKy_41M0fKLjTV4hhTkfMVRsq0zGhFYR1eR3kOajr3gp4LceDXP7NZm1qBCqxw58YXR3VkxX5MBJSJeAeXtgv" alt="Liputan6"></div>
+            <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Logo_Tribunnews.com.png" alt="Tribun"></div>
+            <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/id/7/77/Logo_Tempo.png" alt="Tempo"></div>
+            <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/id/6/63/CNN_Indonesia_logo.png" alt="CNN"></div>
+            <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/id/0/03/Logo_viva_co_id.png" alt="Viva"></div>
+            <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/id/a/a2/Sindonews_Logo.png" alt="Sindonews"></div>
+            <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/id/3/37/Logo_Republika.png" alt="Republika"></div>
+            <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/id/d/dc/Logo_Antara.png" alt="Antara"></div>
+            <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Detikcom_logo.png" alt="Detik"></div>
+            <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Kompas_Logo.svg" alt="Kompas"></div>
+            <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Liputan6_Logo.svg" alt="Liputan6"></div>
+            <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Logo_Tribunnews.com.png" alt="Tribun"></div>
+            <div class="marquee-item"><img src="https://upload.wikimedia.org/wikipedia/id/7/77/Logo_Tempo.png" alt="Tempo"></div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-4 g-lg-5 flex-column-reverse flex-lg-row">
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <div class="about-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80" 
+                             alt="Team Work" class="img-fluid about-img" loading="lazy">
+                        <div class="floating-badge d-flex align-items-center">
+                            <i class="bi bi-award-fill text-brand fs-3"></i>
+                            <div>
+                                <p class="mb-0 fw-bold small">Pilihan Utama</p>
+                                <p class="mb-0 x-small text-muted">Solusi PR Terpercaya</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ps-lg-4">
+                        <h6 class="text-brand fw-bold mb-3">MENGAPA MEDIAGENCY?</h6>
+                        <h2 class="fw-bold mb-4">Bangun Kredibilitas Instan dengan Publikasi Media</h2>
+                        <p class="text-muted mb-3">Kami bukan hanya mengirimkan naskah, tapi merancang berita yang memiliki nilai jual tinggi agar pesan brand Anda tersampaikan dengan efektif melalui:</p>
+                        
+                        <ul class="about-bullets">
+                            <li><i class="bi bi-patch-check-fill"></i> <span>Akses eksklusif ke 500+ portal berita nasional tier-1 terpercaya.</span></li>
+                            <li><i class="bi bi-patch-check-fill"></i> <span>Penulisan draf standar jurnalistik profesional & SEO Friendly.</span></li>
+                            <li><i class="bi bi-patch-check-fill"></i> <span>Laporan publikasi lengkap dengan jaminan link aktif permanen.</span></li>
+                        </ul>
+
+                        <a href="about.html" class="btn btn-brand px-4 py-3 shadow-sm w-100 w-sm-auto">
+                            Selengkapnya <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="layanan" class="py-5 bg-white">
+        <div class="container py-lg-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Layanan Unggulan Kami</h2>
+                <p class="text-muted">Solusi komunikasi menyeluruh untuk brand modern.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="nav flex-column nav-pills nav-services" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link active text-start" id="v-pills-press-tab" data-bs-toggle="pill" data-bs-target="#v-pills-press" type="button" role="tab"><i class="bi bi-megaphone me-2"></i> Press Release Nasional</button>
+                        <button class="nav-link text-start" id="v-pills-seo-tab" data-bs-toggle="pill" data-bs-target="#v-pills-seo" type="button" role="tab"><i class="bi bi-search me-2"></i> Optimasi SEO Digital</button>
+                        <button class="nav-link text-start" id="v-pills-branding-tab" data-bs-toggle="pill" data-bs-target="#v-pills-branding" type="button" role="tab"><i class="bi bi-shield-check me-2"></i> Branding & Reputation</button>
+                        <button class="nav-link text-start" id="v-pills-content-tab" data-bs-toggle="pill" data-bs-target="#v-pills-content" type="button" role="tab"><i class="bi bi-share me-2"></i> Social Media Ads</button>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-press" role="tabpanel">
+                            <div class="tab-content-box">
+                                <div class="row align-items-center g-4">
+                                    <div class="col-md-7">
+                                        <h4 class="fw-bold text-brand mb-3">Distribusi Media Terluas</h4>
+                                        <p class="text-muted small mb-4">Dapatkan publikasi di portal berita papan atas Indonesia seperti Kompas, Detik, dan CNN. Kami memastikan berita Anda tayang tepat waktu dengan standar jurnalistik tinggi.</p>
+                                        <ul class="list-unstyled small">
+                                            <li class="mb-2"><i class="bi bi-check2-circle text-brand me-2"></i> Jaminan Terbit 100%</li>
+                                            <li class="mb-2"><i class="bi bi-check2-circle text-brand me-2"></i> Penulisan Sesuai Standar Jurnalistik</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=600&q=80" class="tab-img-landscape" alt="Press Release" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-seo" role="tabpanel">
+                            <div class="tab-content-box">
+                                <div class="row align-items-center g-4">
+                                    <div class="col-md-7">
+                                        <h4 class="fw-bold text-brand mb-3">Dominasi Mesin Pencari</h4>
+                                        <p class="text-muted small mb-4">Kami mengoptimasi artikel agar nangkring di halaman satu Google, memberikan trafik organik berkelanjutan bagi bisnis Anda melalui backlink berkualitas tinggi.</p>
+                                        <ul class="list-unstyled small">
+                                            <li class="mb-2"><i class="bi bi-check2-circle text-brand me-2"></i> High Quality Backlinks</li>
+                                            <li class="mb-2"><i class="bi bi-check2-circle text-brand me-2"></i> Terindeks Google News Cepat</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" class="tab-img-landscape" alt="SEO Service" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-branding" role="tabpanel">
+                            <div class="tab-content-box">
+                                <div class="row align-items-center g-4">
+                                    <div class="col-md-7">
+                                        <h4 class="fw-bold text-brand mb-3">Manajemen Reputasi</h4>
+                                        <p class="text-muted small mb-4">Bangun citra positif brand Anda melalui strategi PR yang matang. Kami membantu Anda memposisikan brand sebagai pemimpin pasar yang kredibel.</p>
+                                        <ul class="list-unstyled small">
+                                            <li class="mb-2"><i class="bi bi-check2-circle text-brand me-2"></i> Strategi Narasi Positif</li>
+                                            <li class="mb-2"><i class="bi bi-check2-circle text-brand me-2"></i> Penanganan Krisis Media</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=600&q=80" class="tab-img-landscape" alt="Reputation Management" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-content" role="tabpanel">
+                            <div class="tab-content-box">
+                                <div class="row align-items-center g-4">
+                                    <div class="col-md-7">
+                                        <h4 class="fw-bold text-brand mb-3">Viralitas Terukur</h4>
+                                        <p class="text-muted small mb-4">Integrasi masif antara berita nasional dengan iklan media sosial berbayar untuk memastikan pesan Anda menjangkau jutaan audiens secara akurat.</p>
+                                        <ul class="list-unstyled small">
+                                            <li class="mb-2"><i class="bi bi-check2-circle text-brand me-2"></i> Targeted Audience Ads</li>
+                                            <li class="mb-2"><i class="bi bi-check2-circle text-brand me-2"></i> High Engagement Rate</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=600&q=80" class="tab-img-landscape" alt="Social Media Ads" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 text-center text-lg-start ps-lg-3">
+                        <a href="layanan.html" class="btn btn-outline-dark px-4 py-2 fw-bold" style="border-radius: 10px;">Lihat Semua Layanan <i class="bi bi-chevron-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="paket" class="py-5 bg-light">
+        <div class="container py-lg-4 text-center">
+            <h2 class="fw-bold mb-5">Paket Investasi Terbaik</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-6 text-start">
+                    <div class="pricing-card h-100 bg-white">
+                        <h5 class="fw-bold mb-3">Medium Pack</h5>
+                        <h2 class="text-brand fw-bold mb-4">Rp 2.9jt</h2>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-3 small text-muted"><i class="bi bi-check2 text-brand me-2"></i> 2 Media Nasional Nasional</li>
+                            <li class="mb-3 small text-muted"><i class="bi bi-check2 text-brand me-2"></i> Naskah Artikel Jurnalistik</li>
+                            <li class="mb-3 small text-muted"><i class="bi bi-check2 text-brand me-2"></i> Permanen & SEO Friendly</li>
+                        </ul>
+                        <a href="paket.html" class="btn btn-outline-dark w-100 py-2">Pilih Paket</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-start">
+                    <div class="pricing-card featured h-100 bg-white">
+                        <h5 class="fw-bold mb-3">Authority Pack</h5>
+                        <h2 class="text-brand fw-bold mb-4">Rp 6.5jt</h2>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-3 small text-muted"><i class="bi bi-check2 text-brand me-2"></i> 5 Media Nasional Utama</li>
+                            <li class="mb-3 small text-muted"><i class="bi bi-check2 text-brand me-2"></i> Copywriting Premium</li>
+                            <li class="mb-3 small text-muted"><i class="bi bi-check2 text-brand me-2"></i> Full Report & Analytic</li>
+                        </ul>
+                        <a href="paket.html" class="btn btn-brand w-100 py-2">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container py-lg-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Apa Kata Klien Kami?</h2>
+                <p class="text-muted">Dipercaya oleh ribuan bisnis di seluruh Indonesia.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card-testi">
+                        <div class="text-brand mb-3"><i class="bi bi-quote fs-1"></i></div>
+                        <p class="small text-muted mb-4">"Hasil publikasinya sangat cepat dan profesional. Tim MediAgency benar-benar membantu brand kami dikenal luas di media nasional."</p>
+                        <h6 class="fw-bold mb-1">Andi Wijaya</h6>
+                        <span class="x-small text-brand fw-bold">CEO Startup Tech</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-testi">
+                        <div class="text-brand mb-3"><i class="bi bi-quote fs-1"></i></div>
+                        <p class="small text-muted mb-4">"Naskah artikel yang dibuat sangat berkualitas dan sesuai standar jurnalis. SEO brand kami juga meningkat pesat setelah tayang."</p>
+                        <h6 class="fw-bold mb-1">Budi Santoso</h6>
+                        <span class="x-small text-brand fw-bold">Marketing Manager</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-testi">
+                        <div class="text-brand mb-3"><i class="bi bi-quote fs-1"></i></div>
+                        <p class="small text-muted mb-4">"Pelayanan ramah dan transparan. Link publikasi kami permanen dan terdeteksi di Google News dengan sangat cepat."</p>
+                        <h6 class="fw-bold mb-1">Sari Pratama</h6>
+                        <span class="x-small text-brand fw-bold">Public Relations</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="cta-section text-center">
+                <h2 class="fw-bold mb-3 text-white">Siap Membuat Brand Anda Viral?</h2>
+                <p class="mb-4 opacity-75">Konsultasikan kebutuhan publikasi media Anda sekarang secara gratis dengan tim ahli kami.</p>
+                <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                    <a href="https://wa.me/6285606260725" class="btn btn-warning btn-lg fw-bold px-5" style="border-radius:15px; color:#000;">Mulai Sekarang</a>
+                    <a href="layanan.html" class="btn btn-outline-light btn-lg fw-bold px-5" style="border-radius:15px;">Pelajari Prosedur</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a href="index.html" class="footer-logo">MediAgency</a>
+                    <p class="small leading-relaxed text-slate-400">Digital PR Agency terdepan di Indonesia. Kami membantu brand membangun otoritas melalui publikasi media massa yang kredibel.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="footer-heading">Layanan</h5>
+                    <ul class="footer-links">
+                        <li><a href="press-release.html">Press Release</a></li>
+                        <li><a href="advertorial-marketing.html">Advertorial</a></li>
+                        <li><a href="pembuatan-website.html">Jasa Buat Website</a></li>
+                        <li><a href="penulisan-jurnalistik.html">Penulisan Jurnalistik</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="footer-heading">Eksplorasi</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="#">Testimoni</a></li>
+                        <li><a href="#">Bantuan</a></li>
+                        <li><a href="https://wa.me/6285606260725">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="footer-heading">Kontak Resmi</h5>
+                    <ul class="contact-list">
+                        <li><i class="bi bi-geo-alt-fill text-brand me-2"></i><span>Jl. Raya Dhoho, Kediri, Jawa Timur, Indonesia.</span></li>
+                        <li><i class="bi bi-envelope-at-fill text-brand me-2"></i><span>mediagencyofficial@gmail.com</span></li>
+                        <li><i class="bi bi-whatsapp text-brand me-2"></i><span>+62 856 0626 0725</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center text-md-between d-md-flex justify-content-between align-items-center">
+                <p class="x-small text-slate-500 mb-0">&copy; 2026 MediAgency Digital Indonesia. All rights reserved.</p>
+                <div class="mt-3 mt-md-0">
+                    <a href="privacy-policy.html" class="x-small text-slate-500 text-decoration-none me-3">Privacy Policy</a>
+                    <a href="terms.html" class="x-small text-slate-500 text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

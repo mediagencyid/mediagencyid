@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Blog & Wawasan Digital PR Terbaru | MediAgency</title>
+    <meta name="description" content="Pelajari strategi publikasi media, tips SEO, dan tren digital marketing terbaru untuk meningkatkan otoritas brand Anda di blog MediAgency.">
+    <meta name="keywords" content="blog pr digital, tips press release, strategi marketing media, panduan seo berita, insight bisnis digital">
+    <meta name="author" content="MediAgency">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mediagency.id/blog.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Blog Insight MediAgency - Digital PR & Media Strategy">
+    <meta property="og:url" content="https://mediagency.id/blog.html">
+    <meta property="og:image" content="img/logo.webp">
+
+    <link rel="icon" href="img/logo.webp" type="image/png">
+    <link rel="apple-touch-icon" href="img/logo.webp">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <style>
+        :root {
+            --brand-color: #099aa7;
+            --brand-dark: #077d88;
+            --brand-light: #e6f5f6;
+            --brand-soft: rgba(9, 154, 167, 0.1);
+            --dark-text: #1a202c;
+            --accent-yellow: #ffc107; 
+            --footer-bg: #0a1118;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--dark-text);
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        /* --- Global Helpers --- */
+        .text-brand { color: var(--brand-color) !important; }
+        .bg-brand { background-color: var(--brand-color) !important; }
+        
+        .btn-brand {
+            background-color: var(--brand-color);
+            color: white;
+            padding: 12px 28px;
+            font-weight: 700;
+            border-radius: 12px;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        .btn-brand:hover { background-color: var(--brand-dark); color: white; transform: translateY(-2px); }
+
+        /* --- Navbar (FIXED PROPORTIONAL) --- */
+        .navbar { 
+            padding: 0.5rem 0; /* Padding disamakan dengan index */
+            background: white; 
+            box-shadow: 0 4px 30px rgba(0,0,0,0.03); 
+        }
+        .navbar-brand img { height: 40px; width: auto; }
+        /* Tambahan untuk mobile agar tidak mepet */
+        @media (max-width: 991px) {
+            .navbar-collapse {
+                background: white;
+                padding: 15px;
+                border-radius: 15px;
+                margin-top: 10px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            }
+            .nav-item { margin-bottom: 5px; }
+        }
+
+        /* --- Blog Header & Search --- */
+        .blog-header { padding: 60px 0; background: radial-gradient(circle at top right, var(--brand-light), transparent 50%); }
+        .search-wrapper { max-width: 650px; margin: -35px auto 40px; position: relative; z-index: 10; }
+        .search-input { padding: 18px 25px; border-radius: 18px; border: 1px solid #eee; box-shadow: 0 15px 35px rgba(0,0,0,0.05); font-size: 1rem; }
+
+        /* --- Responsive Tabs --- */
+        .nav-tabs-blog { border: none; flex-wrap: nowrap; overflow-x: auto; padding-bottom: 10px; margin-bottom: 40px; scrollbar-width: none; justify-content: center; }
+        @media (max-width: 991px) { .nav-tabs-blog { justify-content: flex-start; } } /* Mobile left align scroll */
+        .nav-tabs-blog::-webkit-scrollbar { display: none; }
+        .nav-tabs-blog .nav-link { 
+            white-space: nowrap; border: 1px solid #eee; border-radius: 50px; 
+            color: #64748b; padding: 10px 25px; font-weight: 600; margin-right: 10px; transition: 0.3s;
+            cursor: pointer;
+        }
+        .nav-tabs-blog .nav-link.active { background-color: var(--brand-color); color: white !important; border-color: var(--brand-color); }
+
+        /* --- Blog Cards --- */
+        .blog-card { border: 1px solid #f1f5f9; border-radius: 20px; overflow: hidden; background: white; transition: 0.3s; height: 100%; display: flex; flex-direction: column; }
+        .blog-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); border-color: var(--brand-color); }
+        .blog-img-wrapper { position: relative; height: 200px; overflow: hidden; }
+        .blog-img-wrapper img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+        .blog-card:hover .blog-img-wrapper img { transform: scale(1.1); }
+        .blog-badge { position: absolute; top: 15px; left: 15px; background: rgba(255,255,255,0.9); color: var(--brand-color); padding: 4px 12px; border-radius: 50px; font-size: 0.7rem; font-weight: 800; backdrop-filter: blur(5px); z-index: 2; }
+        .blog-info { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
+        .blog-title { font-size: 1.15rem; font-weight: 700; line-height: 1.5; margin-bottom: 12px; color: var(--dark-text); }
+        .blog-excerpt { font-size: 0.85rem; color: #64748b; margin-bottom: 20px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+        .blog-meta { font-size: 0.8rem; color: #94a3b8; margin-top: auto; display: flex; align-items: center; gap: 15px; border-top: 1px solid #f1f5f9; padding-top: 15px; }
+
+        /* --- Pagination SINKRON --- */
+        .pagination .page-link { border-radius: 12px; margin: 0 5px; color: var(--brand-color); border-color: #eee; font-weight: 600; cursor: pointer; transition: 0.3s; }
+        .pagination .page-link:hover { background-color: var(--brand-light); color: var(--brand-dark); }
+        .pagination .page-item.active .page-link { 
+            background-color: var(--brand-color) !important; 
+            border-color: var(--brand-color) !important; 
+            color: white !important; /* FONT PUTIH */
+        }
+        .pagination .page-item.disabled .page-link { color: #ccc; pointer-events: none; }
+
+        /* --- CTA Proporsional --- */
+        .cta-section { background: var(--brand-color); border-radius: 35px; padding: 60px 40px; color: white; text-align: center; }
+
+        /* --- Footer (KUNCI) --- */
+        .main-footer { background: var(--footer-bg); color: #e2e8f0; padding: 80px 0 30px; }
+        .footer-logo { font-weight: 800; font-size: 1.8rem; color: var(--brand-color); margin-bottom: 20px; display: block; text-decoration: none; }
+        .footer-heading { font-size: 1.1rem; font-weight: 700; margin-bottom: 25px; color: white; position: relative; padding-bottom: 10px; }
+        .footer-heading::after { content: ''; position: absolute; left: 0; bottom: 0; width: 30px; height: 2px; background: var(--brand-color); }
+        .footer-links { list-style: none; padding: 0; }
+        .footer-links li { margin-bottom: 12px; }
+        .footer-links a { color: #94a3b8; text-decoration: none; transition: all 0.3s ease; font-size: 0.95rem; }
+        .footer-links a:hover { color: var(--accent-yellow); padding-left: 8px; }
+        .social-links { display: flex; gap: 12px; margin-top: 20px; }
+        .social-links a { width: 40px; height: 40px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; border-radius: 10px; color: white; text-decoration: none; transition: 0.3s; }
+        .social-links a:hover { background: var(--brand-color); color: var(--accent-yellow); transform: translateY(-3px); }
+        .contact-list { list-style: none; padding: 0; }
+        .contact-list li { display: flex; align-items: start; gap: 12px; margin-bottom: 15px; font-size: 0.95rem; color: #94a3b8; }
+        .contact-list i { color: var(--brand-color); font-size: 1.1rem; }
+        .footer-bottom { margin-top: 60px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.05); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.webp" alt="MediAgency Logo"></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link fw-semibold py-2" href="about.html">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold py-2" href="layanan.html">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold py-2" href="paket.html">Paket</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold py-2 active" href="blog.html">Blog</a></li>
+                    <li class="nav-item mt-3 mt-lg-0 ms-lg-4 w-100 w-lg-auto"><a href="https://wa.me/6285606260725" class="btn btn-brand w-100">Konsultasi WA</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="blog-header text-center">
+        <div class="container">
+            <h1 class="display-5 fw-bold mb-3">Blog & <span class="text-brand">Insight</span></h1>
+            <p class="text-muted lead">Edukasi strategi Digital PR & Branding terlengkap.</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="search-wrapper">
+            <div class="input-group">
+                <input type="text" id="blogSearch" class="form-control search-input" placeholder="Cari topik atau judul artikel...">
+                <button class="btn btn-brand px-4"><i class="bi bi-search"></i></button>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <nav class="nav nav-tabs-blog" id="blogTabs">
+                <button class="nav-link active" data-filter="all">Semua Artikel</button>
+                <button class="nav-link" data-filter="strategy">Strategi PR</button>
+                <button class="nav-link" data-filter="seo">SEO & Konten</button>
+                <button class="nav-link" data-filter="media">Media Nasional</button>
+                <button class="nav-link" data-filter="tips">Tips Bisnis</button>
+            </nav>
+        </div>
+    </div>
+
+    <section class="pb-5">
+        <div class="container">
+            <div class="row g-4" id="blogGrid">
+                </div>
+
+            <nav class="mt-5">
+                <ul class="pagination justify-content-center" id="blogPagination">
+                    </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="cta-section">
+                <h2 class="fw-bold mb-3 display-6">Butuh Strategi Konten Viral?</h2>
+                <p class="mb-5 opacity-75 lead mx-auto" style="max-width: 650px;">Kami bantu merancang narasi bisnis Anda agar layak tayang di media nasional.</p>
+                <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                    <a href="https://wa.me/6285606260725" class="btn btn-warning btn-lg fw-bold px-5 py-3 shadow-lg" style="border-radius:15px; color:#000;">
+                        <i class="bi bi-whatsapp me-2"></i> WhatsApp Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a href="index.html" class="footer-logo">MediAgency</a>
+                    <p class="small leading-relaxed text-slate-400">Digital PR Agency terdepan di Indonesia. Kami membantu brand membangun otoritas melalui publikasi media massa yang kredibel.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="footer-heading">Layanan</h5>
+                    <ul class="footer-links">
+                        <li><a href="press-release.html">Press Release</a></li>
+                        <li><a href="advertorial-marketing.html">Advertorial</a></li>
+                        <li><a href="pembuatan-website.html">Jasa Buat Website</a></li>
+                        <li><a href="penulisan-jurnalistik.html">Penulisan Jurnalistik</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="footer-heading">Eksplorasi</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="#">Testimoni</a></li>
+                        <li><a href="#">Bantuan</a></li>
+                        <li><a href="https://wa.me/6285606260725">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="footer-heading">Kontak Resmi</h5>
+                    <ul class="contact-list">
+                        <li><i class="bi bi-geo-alt-fill text-brand me-2"></i><span>Jl. Raya Dhoho, Kediri, Jawa Timur, Indonesia.</span></li>
+                        <li><i class="bi bi-envelope-at-fill text-brand me-2"></i><span>mediagencyofficial@gmail.com</span></li>
+                        <li><i class="bi bi-whatsapp text-brand me-2"></i><span>+62 856 0626 0725</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center text-md-between d-md-flex justify-content-between align-items-center">
+                <p class="x-small text-slate-500 mb-0">&copy; 2026 MediAgency Digital Indonesia. All rights reserved.</p>
+                <div class="mt-3 mt-md-0">
+                    <a href="privacy-policy.html" class="x-small text-slate-500 text-decoration-none me-3">Privacy Policy</a>
+                    <a href="terms.html" class="x-small text-slate-500 text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Data Sample 27 Artikel Lengkap
+        const blogData = [];
+        const categories = ['strategy', 'seo', 'media', 'tips'];
+        const labels = { 'strategy': 'STRATEGI PR', 'seo': 'SEO & KONTEN', 'media': 'MEDIA NASIONAL', 'tips': 'TIPS BISNIS' };
+        const titles = [
+            "Cara Meningkatkan Trust Bisnis Lewat Media", "Teknik Menulis Press Release 2026", "Daftar Media Tier-1 Untuk Startup", 
+            "Langkah Management Krisis Brand", "Manfaat Backlink Media Nasional", "Tips UMKM Go Digital", 
+            "Kenapa Berita Lebih Baik dari Iklan", "Cara Menulis 5W+1H Menarik", "Pentingnya Social Proof Bisnis",
+            "Analisis Trafik Portal Berita", "Membangun Reputasi Advertorial", "Panduan Google News SEO",
+            "Sukses Media Gathering & Presscon", "Edukasi Pasar Lewat Jurnalisme", "Menghitung ROI Digital PR",
+            "Perbedaan PR dan Marketing", "Trend Media Massa Tahun Ini", "Optimasi Gambar SEO Berita",
+            "Cara Menghubungi Jurnalis Top", "Keunggulan Berita Permanen", "Audit Reputasi Online Brand",
+            "Strategi Content Pillar Bisnis", "Mengenal EEAT Jurnalistik", "Pentingnya Lead Paragraf Berita",
+            "Branding Tokoh Publik Lewat PR", "Mitigasi Isu Negatif Sosmed", "Masa Depan Digital PR"
+        ];
+
+        for (let i = 0; i < 27; i++) {
+            blogData.push({
+                id: i + 1,
+                title: titles[i],
+                category: categories[i % 4],
+                img: `https://picsum.photos/seed/${i+50}/600/400`,
+                desc: "Pelajari bagaimana publikasi resmi di portal berita besar bisa merubah persepsi calon konsumen Anda secara instan dan permanen.",
+                date: `${(i % 28) + 1} Jan 2026`
+            });
+        }
+
+        const itemsPerPage = 9;
+        let currentPage = 1;
+        let filteredData = [...blogData];
+
+        const grid = document.getElementById('blogGrid');
+        const pagination = document.getElementById('blogPagination');
+        const searchInput = document.getElementById('blogSearch');
+
+        function renderBlog() {
+            grid.innerHTML = '';
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const paginatedItems = filteredData.slice(start, end);
+
+            if (paginatedItems.length === 0) {
+                grid.innerHTML = '<div class="col-12 text-center py-5"><p class="text-muted">Artikel tidak ditemukan.</p></div>';
+                return;
+            }
+
+            paginatedItems.forEach(item => {
+                grid.innerHTML += `
+                    <div class="col-md-6 col-lg-4">
+                        <div class="blog-card">
+                            <div class="blog-img-wrapper">
+                                <span class="blog-badge shadow-sm">${labels[item.category]}</span>
+                                <img src="${item.img}" alt="${item.title}">
+                            </div>
+                            <div class="blog-info">
+                                <h5 class="blog-title">${item.title}</h5>
+                                <p class="blog-excerpt">${item.desc}</p>
+                                <div class="blog-meta">
+                                    <span><i class="bi bi-calendar3 me-1"></i> ${item.date}</span>
+                                    <span><i class="bi bi-person me-1"></i> Admin</span>
+                                </div>
+                                <a href="detail-blog.html?id=${item.id}" class="btn btn-outline-info mt-3 fw-bold" style="border-radius:12px; color:var(--brand-color); border-color:var(--brand-color)">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>`;
+            });
+            renderPagination();
+        }
+
+        function renderPagination() {
+            pagination.innerHTML = '';
+            const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+            if (totalPages <= 1) return;
+
+            pagination.innerHTML += `
+                <li class="page-item ${currentPage === 1 ? 'disabled' : ''}">
+                    <a class="page-link" onclick="changePage(${currentPage - 1})"><i class="bi bi-chevron-left"></i></a>
+                </li>`;
+
+            for (let i = 1; i <= totalPages; i++) {
+                pagination.innerHTML += `
+                    <li class="page-item ${i === currentPage ? 'active' : ''}">
+                        <a class="page-link" onclick="changePage(${i})">${i}</a>
+                    </li>`;
+            }
+
+            pagination.innerHTML += `
+                <li class="page-item ${currentPage === totalPages ? 'disabled' : ''}">
+                    <a class="page-link" onclick="changePage(${currentPage + 1})"><i class="bi bi-chevron-right"></i></a>
+                </li>`;
+        }
+
+        window.changePage = (page) => {
+            currentPage = page;
+            renderBlog();
+            window.scrollTo({ top: document.querySelector('.search-wrapper').offsetTop - 100, behavior: 'smooth' });
+        };
+
+        function applyFilters() {
+            const search = searchInput.value.toLowerCase();
+            const activeTab = document.querySelector('.nav-tabs-blog .nav-link.active').getAttribute('data-filter');
+
+            filteredData = blogData.filter(item => {
+                const matchSearch = item.title.toLowerCase().includes(search);
+                const matchTab = activeTab === 'all' || item.category === activeTab;
+                return matchSearch && matchTab;
+            });
+
+            currentPage = 1;
+            renderBlog();
+        }
+
+        searchInput.addEventListener('input', applyFilters);
+        document.querySelectorAll('.nav-tabs-blog .nav-link').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelector('.nav-tabs-blog .nav-link.active').classList.remove('active');
+                this.classList.add('active');
+                applyFilters();
+            });
+        });
+
+        renderBlog();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

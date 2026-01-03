@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Kebijakan Privasi (Privacy Policy) - MediAgency</title>
+    <meta name="description" content="Halaman Kebijakan Privasi MediAgency. Pelajari bagaimana kami mengumpulkan, menggunakan, dan melindungi data pribadi Anda.">
+    <meta name="robots" content="noindex, follow"> <link rel="icon" href="img/logo.webp" type="image/png">
+    <link rel="apple-touch-icon" href="img/logo.webp">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        :root {
+            --brand-color: #099aa7;
+            --brand-dark: #077d88;
+            --brand-light: #e6f5f6;
+            --text-dark: #1a202c;
+            --footer-bg: #0a1118;
+            --accent-yellow: #ffc107;
+        }
+
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #ffffff; color: var(--text-dark); scroll-behavior: smooth; line-height: 1.8; }
+
+        /* Navbar (LOCKED) */
+        .navbar { padding: 0.5rem 0; background: white; box-shadow: 0 4px 30px rgba(0,0,0,0.03); }
+        .navbar-brand img { height: 40px; width: auto; }
+
+        /* Header Simple */
+        .policy-header { padding: 80px 0 60px; background: radial-gradient(circle at top center, var(--brand-light), white 70%); text-align: center; }
+        
+        /* Policy Content Styles */
+        .policy-content { font-size: 1.05rem; color: #4a5568; text-align: left; }
+        .policy-content h1, .policy-content h2, .policy-content h3 { color: var(--brand-dark); font-weight: 700; margin-top: 40px; margin-bottom: 20px; }
+        .policy-content h2 { font-size: 1.5rem; border-bottom: 2px solid var(--brand-light); padding-bottom: 10px; display: inline-block; }
+        .policy-content p { margin-bottom: 20px; }
+        .policy-content ul { margin-bottom: 20px; padding-left: 20px; }
+        .policy-content li { margin-bottom: 10px; }
+        
+        .last-updated { font-size: 0.9rem; color: #718096; margin-bottom: 40px; display: block; text-align: center; font-style: italic; }
+
+        /* Floating Top Button */
+        .btn-top { position: fixed; bottom: 30px; right: 30px; width: 45px; height: 45px; background: #fff; color: var(--brand-color); border-radius: 10px; display: none; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); z-index: 1000; border: 1px solid #eee; transition: 0.3s; cursor: pointer; text-decoration: none; }
+        .btn-top.show { display: flex; }
+        .btn-top:hover { background: var(--brand-color); color: white; }
+
+        /* Footer (LOCKED) */
+        .main-footer { background: var(--footer-bg); color: #e2e8f0; padding: 80px 0 30px; }
+        .footer-logo { font-weight: 800; font-size: 1.8rem; color: var(--brand-color); margin-bottom: 20px; display: block; text-decoration: none; }
+        .footer-heading { font-size: 1.1rem; font-weight: 700; margin-bottom: 25px; color: white; position: relative; padding-bottom: 10px; }
+        .footer-heading::after { content: ''; position: absolute; left: 0; bottom: 0; width: 30px; height: 2px; background: var(--brand-color); }
+        .footer-links { list-style: none; padding: 0; }
+        .footer-links li { margin-bottom: 12px; }
+        .footer-links a { color: #94a3b8; text-decoration: none; transition: all 0.3s ease; font-size: 0.95rem; }
+        .footer-links a:hover { color: var(--accent-yellow); padding-left: 8px; }
+        .social-links { display: flex; gap: 12px; margin-top: 20px; }
+        .social-links a { width: 40px; height: 40px; background: rgba(255,255,255,0.05); display: flex; align-items: center; justify-content: center; border-radius: 10px; color: white; text-decoration: none; transition: 0.3s; margin-right: 10px; }
+        .social-links a:hover { background: var(--brand-color); color: var(--accent-yellow); transform: translateY(-3px); }
+        .contact-list { list-style: none; padding: 0; }
+        .contact-list li { display: flex; align-items: start; gap: 12px; margin-bottom: 15px; font-size: 0.95rem; color: #94a3b8; }
+        .contact-list i { color: var(--brand-color); font-size: 1.1rem; }
+        .footer-bottom { margin-top: 60px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.05); }
+
+        @media (max-width: 991px) {
+            .navbar-collapse { background: white; padding: 15px; border-radius: 15px; margin-top: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+            .btn-top { bottom: 20px; right: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.webp" alt="MediAgency Logo"></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link fw-semibold py-2 text-dark text-decoration-none mx-2" href="about.html">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold py-2 text-dark text-decoration-none mx-2" href="layanan.html">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold py-2 text-dark text-decoration-none mx-2" href="paket.html">Paket</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold py-2 text-dark text-decoration-none mx-2" href="blog.html">Blog</a></li>
+                    <li class="nav-item mt-3 mt-lg-0 ms-lg-4 w-100 w-lg-auto"><a href="https://wa.me/6285606260725" class="btn btn-brand w-100" style="background-color: var(--brand-color); color: white; border-radius: 12px; font-weight: 700; padding: 10px 25px; text-decoration: none;">Konsultasi WA</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="policy-header">
+        <div class="container">
+            <h1 class="display-5 fw-bold mb-3">Kebijakan Privasi</h1>
+            <p class="text-muted lead mx-auto" style="max-width: 700px;">Komitmen kami untuk melindungi data dan informasi pribadi Anda.</p>
+        </div>
+    </div>
+
+    <div class="container pb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="policy-content">
+                    <span class="last-updated">Terakhir diperbarui: 01 Januari 2026</span>
+
+                    <p>Selamat datang di MediAgency ("kami"). Kami menghargai privasi Anda dan berkomitmen untuk melindungi data pribadi yang Anda bagikan kepada kami. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi Anda saat menggunakan situs web kami.</p>
+
+                    <h2>1. Informasi yang Kami Kumpulkan</h2>
+                    <p>Kami dapat mengumpulkan informasi pribadi yang Anda berikan secara sukarela saat:</p>
+                    <ul>
+                        <li>Menghubungi kami melalui formulir kontak atau WhatsApp.</li>
+                        <li>Berlangganan newsletter atau layanan kami.</li>
+                        <li>Menggunakan layanan konsultasi kami.</li>
+                    </ul>
+                    <p>Informasi yang mungkin kami kumpulkan meliputi:</p>
+                    <ul>
+                        <li>Nama Lengkap</li>
+                        <li>Alamat Email</li>
+                        <li>Nomor Telepon / WhatsApp</li>
+                        <li>Informasi terkait bisnis atau perusahaan Anda (untuk keperluan layanan Press Release).</li>
+                    </ul>
+
+                    <h2>2. Penggunaan Informasi</h2>
+                    <p>Data yang kami kumpulkan digunakan untuk tujuan berikut:</p>
+                    <ul>
+                        <li>Menyediakan layanan Digital PR dan publikasi media yang Anda minta.</li>
+                        <li>Mengirimkan informasi penawaran, update layanan, atau berita industri (jika Anda berlangganan).</li>
+                        <li>Meningkatkan kualitas layanan dan pengalaman pengguna di situs web kami.</li>
+                        <li>Keperluan administrasi internal dan pemrosesan transaksi.</li>
+                    </ul>
+
+                    <h2>3. Cookies dan Teknologi Pelacakan</h2>
+                    <p>Situs web MediAgency menggunakan "cookies" untuk meningkatkan pengalaman Anda. Cookies adalah file kecil yang disimpan di perangkat Anda untuk membantu kami menganalisis lalu lintas web dan preferensi pengunjung. Anda dapat memilih untuk menonaktifkan cookies melalui pengaturan browser Anda, namun hal ini dapat memengaruhi fungsionalitas situs.</p>
+
+                    <h2>4. Pengungkapan kepada Pihak Ketiga</h2>
+                    <p>Kami <strong>tidak menjual, memperdagangkan, atau menyewakan</strong> informasi pribadi Anda kepada pihak lain. Kami hanya dapat membagikan informasi Anda kepada:</p>
+                    <ul>
+                        <li><strong>Mitra Media:</strong> Untuk keperluan publikasi press release (hanya data yang relevan untuk diterbitkan dalam berita).</li>
+                        <li><strong>Penyedia Layanan:</strong> Pihak ketiga yang membantu operasional kami (seperti hosting web atau analitik) yang terikat perjanjian kerahasiaan.</li>
+                        <li><strong>Kewajiban Hukum:</strong> Jika diwajibkan oleh hukum atau peraturan pemerintah yang berlaku di Indonesia.</li>
+                    </ul>
+
+                    <h2>5. Keamanan Data</h2>
+                    <p>Kami menerapkan langkah-langkah keamanan teknis dan organisasional yang wajar untuk melindungi data pribadi Anda dari akses yang tidak sah, kehilangan, atau penyalahgunaan. Namun, harap dipahami bahwa tidak ada metode transmisi data melalui internet yang 100% aman.</p>
+
+                    <h2>6. Hak Anda</h2>
+                    <p>Anda memiliki hak untuk:</p>
+                    <ul>
+                        <li>Meminta akses ke data pribadi yang kami simpan tentang Anda.</li>
+                        <li>Meminta koreksi jika terdapat data yang tidak akurat.</li>
+                        <li>Meminta penghapusan data pribadi Anda dari database kami (sesuai ketentuan hukum yang berlaku).</li>
+                    </ul>
+
+                    <h2>7. Hubungi Kami</h2>
+                    <p>Jika Anda memiliki pertanyaan mengenai Kebijakan Privasi ini, silakan hubungi kami melalui:</p>
+                    <p>
+                        <strong>MediAgency Office</strong><br>
+                        Jl. Raya Dhoho, Kediri, Jawa Timur, Indonesia.<br>
+                        Email: <a href="mailto:officialmediagency@gmail.com" class="text-brand text-decoration-none">officialmediagency@gmail.com</a><br>
+                        WhatsApp: +62 856 0626 0725
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a href="index.html" class="footer-logo">MediAgency</a>
+                    <p class="small leading-relaxed text-slate-400">Digital PR Agency terdepan di Indonesia. Kami membantu brand membangun otoritas melalui publikasi media massa yang kredibel.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="footer-heading">Layanan</h5>
+                    <ul class="footer-links">
+                        <li><a href="press-release.html">Press Release</a></li>
+                        <li><a href="advertorial-marketing.html">Advertorial</a></li>
+                        <li><a href="pembuatan-website.html">Jasa Buat Website</a></li>
+                        <li><a href="penulisan-jurnalistik.html">Penulisan Jurnalistik</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="footer-heading">Eksplorasi</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="#">Testimoni</a></li>
+                        <li><a href="#">Bantuan</a></li>
+                        <li><a href="https://wa.me/6285606260725">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="footer-heading">Kontak Resmi</h5>
+                    <ul class="contact-list">
+                        <li><i class="bi bi-geo-alt-fill text-brand me-2"></i><span>Jl. Raya Dhoho, Kediri, Jawa Timur, Indonesia.</span></li>
+                        <li><i class="bi bi-envelope-at-fill text-brand me-2"></i><span>mediagencyofficial@gmail.com</span></li>
+                        <li><i class="bi bi-whatsapp text-brand me-2"></i><span>+62 856 0626 0725</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center text-md-between d-md-flex justify-content-between align-items-center">
+                <p class="x-small text-slate-500 mb-0">&copy; 2026 MediAgency Digital Indonesia. All rights reserved.</p>
+                <div class="mt-3 mt-md-0">
+                    <a href="privacy-policy.html" class="x-small text-slate-500 text-decoration-none me-3">Privacy Policy</a>
+                    <a href="terms.html" class="x-small text-slate-500 text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="btn-top shadow" id="btnTop"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Back to Top Logic
+        const btnTop = document.getElementById('btnTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) btnTop.classList.add('show');
+            else btnTop.classList.remove('show');
+        });
+        btnTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Pilihan Paket Jasa Press Release & Advertorial | MediAgency</title>
+    <meta name="description" content="Pilih paket investasi branding MediAgency. 3 pilihan paket Press Release dan 3 paket Advertorial Nasional dengan harga transparan dan jaminan terbit 100%.">
+    <meta name="keywords" content="paket press release, harga jasa pr, biaya advertorial media, paket publikasi media nasional, paket SEO berita">
+    <meta name="author" content="MediAgency">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mediagency.id/paket.html">
+
+    <link rel="icon" href="img/logo.webp" type="image/png">
+    <link rel="apple-touch-icon" href="img/logo.webp">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <style>
+        :root {
+            --brand-color: #099aa7;
+            --brand-dark: #077d88;
+            --brand-light: #e6f5f6;
+            --brand-soft: rgba(9, 154, 167, 0.1);
+            --dark-text: #1a202c;
+            --accent-yellow: #ffc107; 
+            --footer-bg: #0a1118;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--dark-text);
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        /* --- Global Helpers --- */
+        .text-brand { color: var(--brand-color) !important; }
+        .bg-brand { background-color: var(--brand-color) !important; }
+        
+        .btn-brand {
+            background-color: var(--brand-color);
+            color: white;
+            padding: 12px 28px;
+            font-weight: 700;
+            border-radius: 12px;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        .btn-brand:hover {
+            background-color: var(--brand-dark);
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(9, 154, 167, 0.2);
+        }
+
+        /* --- Navbar (KUNCI) --- */
+        .navbar {
+            padding: 0.5rem 0;
+            background: white;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.03);
+        }
+        .navbar-brand img { height: 40px; width: auto; }
+
+        /* --- Pricing Header --- */
+        .pricing-header {
+            padding: 60px 0;
+            background: radial-gradient(circle at top right, var(--brand-light), transparent 50%);
+        }
+
+        /* --- Pricing Card Style --- */
+        .package-card {
+            border: 1px solid #f1f5f9;
+            border-radius: 24px;
+            padding: 40px 30px;
+            background: #fff;
+            transition: 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .package-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            border-color: var(--brand-color);
+        }
+        .package-card.featured {
+            border: 2px solid var(--brand-color);
+            position: relative;
+            box-shadow: 0 15px 35px rgba(9, 154, 167, 0.1);
+        }
+        .badge-populer {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--brand-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        /* --- Modal Custom --- */
+        .modal-content { border-radius: 25px; border: none; overflow: hidden; }
+        .modal-header { background: var(--brand-color); color: white; border: none; padding: 25px 30px; }
+        .btn-close-white { filter: brightness(0) invert(1); }
+        .modal-body { padding: 35px 30px; }
+
+        /* --- CTA Proporsional --- */
+        .cta-section {
+            background: var(--brand-color);
+            border-radius: 35px;
+            padding: 70px 40px;
+            color: white;
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(9, 154, 167, 0.15);
+        }
+
+        /* --- Floating Buttons --- */
+        .floating-wa {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        .btn-top {
+            position: fixed;
+            bottom: 105px;
+            right: 30px;
+            background: white;
+            color: var(--brand-color);
+            width: 45px;
+            height: 45px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            z-index: 1000;
+            border: 1px solid #f1f5f9;
+        }
+
+        /* --- FOOTER (FIXED) --- */
+        .main-footer {
+            background: var(--footer-bg);
+            color: #e2e8f0;
+            padding: 80px 0 30px;
+        }
+        .footer-logo { font-weight: 800; font-size: 1.8rem; color: var(--brand-color); margin-bottom: 20px; display: block; text-decoration: none; }
+        .footer-heading { font-size: 1.1rem; font-weight: 700; margin-bottom: 25px; color: white; position: relative; padding-bottom: 10px; }
+        .footer-heading::after { content: ''; position: absolute; left: 0; bottom: 0; width: 30px; height: 2px; background: var(--brand-color); }
+        .footer-links { list-style: none; padding: 0; }
+        .footer-links li { margin-bottom: 12px; }
+        .footer-links a { color: #94a3b8; text-decoration: none; transition: all 0.3s ease; font-size: 0.95rem; }
+        .footer-links a:hover { color: var(--accent-yellow); padding-left: 8px; }
+        
+        .social-links { display: flex; gap: 12px; margin-top: 20px; }
+        .social-links a { 
+            width: 40px; height: 40px; 
+            background: rgba(255,255,255,0.05); 
+            display: flex; align-items: center; justify-content: center; 
+            border-radius: 10px; color: white; text-decoration: none; transition: 0.3s; 
+        }
+        .social-links a:hover { background: var(--brand-color); color: var(--accent-yellow); transform: translateY(-3px); }
+        
+        .contact-list { list-style: none; padding: 0; }
+        .contact-list li { display: flex; align-items: start; gap: 12px; margin-bottom: 15px; font-size: 0.95rem; color: #94a3b8; }
+        .contact-list i { color: var(--brand-color); font-size: 1.1rem; }
+        .footer-bottom { margin-top: 60px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.05); }
+    </style>
+</head>
+<body>
+
+    <a href="https://wa.me/6285606260725" class="floating-wa shadow"><i class="bi bi-whatsapp"></i></a>
+    <a href="#" class="btn-top shadow"><i class="bi bi-arrow-up"></i></a>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.webp" alt="MediAgency Logo">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link fw-semibold py-2" href="about.html">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold py-2" href="layanan.html">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold py-2 active" href="paket.html">Paket</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold py-2" href="blog.html">Blog</a></li>
+                    <li class="nav-item mt-3 mt-lg-0 ms-lg-4 w-100 w-lg-auto">
+                        <a href="https://wa.me/6285606260725" class="btn btn-brand w-100">Konsultasi WA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pricing-header text-center border-bottom">
+        <div class="container">
+            <h1 class="display-5 fw-bold mb-3">Pilihan Paket <span class="text-brand">Investasi</span></h1>
+            <p class="text-muted lead mx-auto" style="max-width: 700px;">Transparan, kompetitif, dan bergaransi tayang 100%.</p>
+        </div>
+    </header>
+
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="mb-5 text-center text-lg-start">
+                <h3 class="fw-bold border-start border-4 border-info ps-3">Paket Press Release</h3>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="package-card">
+                        <h5 class="fw-bold">Basic Pack</h5>
+                        <h2 class="fw-bold text-brand my-4">Rp 1.5jt</h2>
+                        <ul class="list-unstyled mb-4 small text-start">
+                            <li class="mb-2"><i class="bi bi-check2 text-brand me-2"></i> 1 Media Nasional</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-brand me-2"></i> Penulisan Naskah</li>
+                        </ul>
+                        <button class="btn btn-outline-brand mt-auto w-100 py-3 fw-bold" style="border: 2px solid var(--brand-color); color: var(--brand-color); border-radius: 12px;" data-bs-toggle="modal" data-bs-target="#modalPRBasic">Detail Paket</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="package-card featured">
+                        <div class="badge-populer">BEST SELLER</div>
+                        <h5 class="fw-bold">Medium Pack</h5>
+                        <h2 class="fw-bold text-brand my-4">Rp 2.9jt</h2>
+                        <ul class="list-unstyled mb-4 small text-start">
+                            <li class="mb-2"><i class="bi bi-check2 text-brand me-2"></i> 2 Media Nasional</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-brand me-2"></i> Link Aktif Permanen</li>
+                        </ul>
+                        <button class="btn btn-brand mt-auto w-100 py-3 shadow" data-bs-toggle="modal" data-bs-target="#modalPRMedium">Detail Paket</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="package-card">
+                        <h5 class="fw-bold">Authority Pack</h5>
+                        <h2 class="fw-bold text-brand my-4">Rp 6.5jt</h2>
+                        <ul class="list-unstyled mb-4 small text-start">
+                            <li class="mb-2"><i class="bi bi-check2 text-brand me-2"></i> 5 Media Nasional Tier-1</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-brand me-2"></i> SEO Optimized</li>
+                        </ul>
+                        <button class="btn btn-outline-brand mt-auto w-100 py-3 fw-bold" style="border: 2px solid var(--brand-color); color: var(--brand-color); border-radius: 12px;" data-bs-toggle="modal" data-bs-target="#modalPRAuthority">Detail Paket</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="mb-5 text-center text-lg-start">
+                <h3 class="fw-bold border-start border-4 border-info ps-3">Paket Advertorial</h3>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="package-card">
+                        <h5 class="fw-bold">Adv Starter</h5>
+                        <h2 class="fw-bold text-brand my-4">Rp 2.5jt</h2>
+                        <ul class="list-unstyled mb-4 small text-start">
+                            <li class="mb-2"><i class="bi bi-check2 text-brand me-2"></i> 1 Media Nasional</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-brand me-2"></i> 1 Backlink Dofollow</li>
+                        </ul>
+                        <button class="btn btn-outline-brand mt-auto w-100 py-3 fw-bold" style="border: 2px solid var(--brand-color); color: var(--brand-color); border-radius: 12px;" data-bs-toggle="modal" data-bs-target="#modalADVStarter">Detail Paket</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="package-card featured">
+                        <div class="badge-populer">REKOMENDASI</div>
+                        <h5 class="fw-bold">Adv Premium</h5>
+                        <h2 class="fw-bold text-brand my-4">Rp 4.5jt</h2>
+                        <ul class="list-unstyled mb-4 small text-start">
+                            <li class="mb-2"><i class="bi bi-check2 text-brand me-2"></i> 1 Media Tier-1 (Detik/Kompas)</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-brand me-2"></i> Up to 3 Link Aktif</li>
+                        </ul>
+                        <button class="btn btn-brand mt-auto w-100 py-3 shadow" data-bs-toggle="modal" data-bs-target="#modalADVPremium">Detail Paket</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="package-card">
+                        <h5 class="fw-bold">Adv Corporate</h5>
+                        <h2 class="fw-bold text-brand my-4">Rp 12.5jt</h2>
+                        <ul class="list-unstyled mb-4 small text-start">
+                            <li class="mb-2"><i class="bi bi-check2 text-brand me-2"></i> 3 Media Tier-1</li>
+                            <li class="mb-2"><i class="bi bi-check2 text-brand me-2"></i> Social Media Amplification</li>
+                        </ul>
+                        <button class="btn btn-outline-brand mt-auto w-100 py-3 fw-bold" style="border: 2px solid var(--brand-color); color: var(--brand-color); border-radius: 12px;" data-bs-toggle="modal" data-bs-target="#modalADVCorporate">Detail Paket</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modalPRBasic" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header"><h5 class="modal-title fw-bold">Detail Basic Pack</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body text-start">
+                    <ul class="small list-unstyled"><li class="mb-2 border-bottom pb-2">1 Media Nasional</li><li class="mb-2 border-bottom pb-2">Penulisan Naskah</li></ul>
+                    <a href="https://wa.me/6285606260725" class="btn btn-brand w-100 mt-4 shadow">WhatsApp Kami</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPRMedium" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header"><h5 class="modal-title fw-bold">Detail Medium Pack</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body text-start">
+                    <ul class="small list-unstyled"><li class="mb-2 border-bottom pb-2">2 Media Nasional</li><li class="mb-2 border-bottom pb-2">Link Aktif Permanen</li></ul>
+                    <a href="https://wa.me/6285606260725" class="btn btn-brand w-100 mt-4 shadow">WhatsApp Kami</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPRAuthority" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header"><h5 class="modal-title fw-bold">Detail Authority Pack</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body text-start">
+                    <ul class="small list-unstyled"><li class="mb-2 border-bottom pb-2">5 Media Tier-1</li><li class="mb-2 border-bottom pb-2">SEO Optimized</li></ul>
+                    <a href="https://wa.me/6285606260725" class="btn btn-brand w-100 mt-4 shadow">WhatsApp Kami</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalADVStarter" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header"><h5 class="modal-title fw-bold">Detail Adv Starter</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body text-start">
+                    <ul class="small list-unstyled"><li class="mb-2 border-bottom pb-2">1 Media Nasional</li><li class="mb-2 border-bottom pb-2">1 Backlink Dofollow</li></ul>
+                    <a href="https://wa.me/6285606260725" class="btn btn-brand w-100 mt-4 shadow">WhatsApp Kami</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalADVPremium" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header"><h5 class="modal-title fw-bold">Detail Adv Premium</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body text-start">
+                    <ul class="small list-unstyled"><li class="mb-2 border-bottom pb-2">Media Tier-1 (Detik/Kompas)</li><li class="mb-2 border-bottom pb-2">Up to 3 Link Aktif</li></ul>
+                    <a href="https://wa.me/6285606260725" class="btn btn-brand w-100 mt-4 shadow">WhatsApp Kami</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalADVCorporate" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header"><h5 class="modal-title fw-bold">Detail Adv Corporate</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body text-start">
+                    <ul class="small list-unstyled"><li class="mb-2 border-bottom pb-2">3 Media Tier-1</li><li class="mb-2 border-bottom pb-2">Social Media Amplification</li></ul>
+                    <a href="https://wa.me/6285606260725" class="btn btn-brand w-100 mt-4 shadow">WhatsApp Kami</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-5 bg-white text-center">
+        <div class="container">
+            <div class="cta-section">
+                <h2 class="fw-bold mb-3 display-6">Masih Bingung Memilih Paket?</h2>
+                <p class="mb-5 opacity-75 lead mx-auto" style="max-width: 600px;">Tim ahli kami siap memberikan rekomendasi paket media yang paling efektif untuk Anda.</p>
+                <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                    <a href="https://wa.me/6285606260725" class="btn btn-warning btn-lg fw-bold px-5 py-3 shadow-lg" style="border-radius:15px; color:#000;">
+                        <i class="bi bi-chat-dots me-2"></i> Konsultasi Gratis Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <a href="index.html" class="footer-logo">MediAgency</a>
+                    <p class="small leading-relaxed text-slate-400">Digital PR Agency terdepan di Indonesia. Kami membantu brand membangun otoritas melalui publikasi media massa yang kredibel.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="footer-heading">Layanan</h5>
+                    <ul class="footer-links">
+                        <li><a href="press-release.html">Press Release</a></li>
+                        <li><a href="advertorial-marketing.html">Advertorial</a></li>
+                        <li><a href="pembuatan-website.html">Jasa Buat Website</a></li>
+                        <li><a href="penulisan-jurnalistik.html">Penulisan Jurnalistik</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5 class="footer-heading">Eksplorasi</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="#">Testimoni</a></li>
+                        <li><a href="#">Bantuan</a></li>
+                        <li><a href="https://wa.me/6285606260725">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="footer-heading">Kontak Resmi</h5>
+                    <ul class="contact-list">
+                        <li><i class="bi bi-geo-alt-fill text-brand me-2"></i><span>Jl. Raya Dhoho, Kediri, Jawa Timur, Indonesia.</span></li>
+                        <li><i class="bi bi-envelope-at-fill text-brand me-2"></i><span>mediagencyofficial@gmail.com</span></li>
+                        <li><i class="bi bi-whatsapp text-brand me-2"></i><span>+62 856 0626 0725</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom text-center text-md-between d-md-flex justify-content-between align-items-center">
+                <p class="x-small text-slate-500 mb-0">&copy; 2026 MediAgency Digital Indonesia. All rights reserved.</p>
+                <div class="mt-3 mt-md-0">
+                    <a href="privacy-policy.html" class="x-small text-slate-500 text-decoration-none me-3">Privacy Policy</a>
+                    <a href="terms.html" class="x-small text-slate-500 text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
